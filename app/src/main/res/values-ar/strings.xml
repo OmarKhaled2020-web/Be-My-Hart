@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كن قلبي</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="near_me">بالقرب مني</string>
+    <string name="search">بحث</string>
+    <string name="profile">ملفي الشخصي</string>
+    <string name="favourite">أشخاص مفضلين</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="support">الدعم</string>
+    <string name="app_info">معلومات التطبيق</string>
+    <string name="communicate">التواصل</string>
+    <string name="add">اضافة</string>
+    <string name="fans">معجبين</string>
+    <string name="my_friends">أصدقاني</string>
+    <string name="setting">الإعدادت</string>
+    <string name="dark_theme">الوضع الليلي</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/near_me"
+        android:title="@string/near_me"
+        android:icon="@drawable/ic_location"/>
+
+    <item
+        android:id="@+id/someThing_add"
+        android:title="@string/add"
+        android:icon="@drawable/ic_add_something"/>
+
+    <item
+        android:id="@+id/fans"
+        android:title="@string/fans"
+        android:icon="@drawable/ic_fans"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_person"/>
+
+</menu>

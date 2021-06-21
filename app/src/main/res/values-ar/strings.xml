@@ -21,5 +21,10 @@
     <string name="forget_password">نسيت كلمة السر؟</string>
     <string name="password">كلمة السر</string>
     <string name="email">البريد الإلكتروني</string>
-    <string name="sign_up">أنشئ حساب جديد.</string>
+    <string name="sign_up">إنشاء حساب جديد.</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="already_have_an_account">بالفعل أمتلك حساب.</string>
+    <string name="registration">تسجيل</string>
+    <string name="UserNameRequire">اسم المستخدم مطلوب</string>
 </resources>

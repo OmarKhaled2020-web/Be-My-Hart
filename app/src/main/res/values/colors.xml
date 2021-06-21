@@ -10,6 +10,7 @@
     <color name="pink">#FF0066</color>
     <color name="litePink">#ff99c2</color>
     <color name="lineColor">#80AAAAAA</color>
+    <color name="red">#ff0000</color>
 
     <color name="upBackgroundColor">#323232</color>
 </resources>

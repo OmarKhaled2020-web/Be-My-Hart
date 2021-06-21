@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768008161781",
+    "project_id": "be-my-hart",
+    "storage_bucket": "be-my-hart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768008161781:android:7e9f0377a5348a5b3ab8bc",
+        "android_client_info": {
+          "package_name": "com.omar.bemyhart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768008161781-thle7u2ukgrut1qn8aul6u806ko61cge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhGrjQxRUC4ymhXB4yByBHMw_PPOMG_Rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768008161781-thle7u2ukgrut1qn8aul6u806ko61cge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

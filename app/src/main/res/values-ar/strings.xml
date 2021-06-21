@@ -15,4 +15,11 @@
     <string name="my_friends">أصدقاني</string>
     <string name="setting">الإعدادت</string>
     <string name="dark_theme">الوضع الليلي</string>
+    <string name="love">أحببته</string>
+    <string name="comment">تعليق</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="forget_password">نسيت كلمة السر؟</string>
+    <string name="password">كلمة السر</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="sign_up">أنشئ حساب جديد.</string>
 </resources>

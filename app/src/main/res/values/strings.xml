@@ -19,6 +19,13 @@
     <string name="my_friends">My Friends</string>
     <string name="setting">Settings</string>
     <string name="dark_theme">Dark Theme</string>
+    <string name="love">Love</string>
+    <string name="comment">Comment</string>
+    <string name="log_in">Log In</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Create a new Account.</string>
 
 
 </resources>

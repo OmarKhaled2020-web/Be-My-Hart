@@ -1,11 +1,11 @@
-package com.omar.bemyhart;
+package com.omar.bemyhart.Models;
 
-public class City_Model {
+public class Country_Model {
 
     private String name;
     private String id;
 
-    public City_Model(String name, String id) {
+    public Country_Model(String name, String id) {
         this.name = name;
         this.id = id;
     }
@@ -25,5 +25,4 @@ public class City_Model {
     public void setId(String id) {
         this.id = id;
     }
-
 }

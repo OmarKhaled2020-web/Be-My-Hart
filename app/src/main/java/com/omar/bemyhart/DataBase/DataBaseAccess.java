@@ -1,9 +1,13 @@
-package com.omar.bemyhart;
+package com.omar.bemyhart.DataBase;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.omar.bemyhart.Models.City_Model;
+import com.omar.bemyhart.Models.Country_Model;
+import com.omar.bemyhart.Models.State_Model;
 
 import java.util.ArrayList;
 

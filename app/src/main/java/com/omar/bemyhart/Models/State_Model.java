@@ -1,11 +1,11 @@
-package com.omar.bemyhart;
+package com.omar.bemyhart.Models;
 
-public class Country_Model {
+public class State_Model {
 
     private String name;
     private String id;
 
-    public Country_Model(String name, String id) {
+    public State_Model(String name, String id) {
         this.name = name;
         this.id = id;
     }

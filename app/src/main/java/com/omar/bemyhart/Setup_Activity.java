@@ -8,6 +8,11 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
+import com.omar.bemyhart.DataBase.DataBaseAccess;
+import com.omar.bemyhart.Models.City_Model;
+import com.omar.bemyhart.Models.Country_Model;
+import com.omar.bemyhart.Models.State_Model;
+
 import java.util.ArrayList;
 
 public class Setup_Activity extends AppCompatActivity {

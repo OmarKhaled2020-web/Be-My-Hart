@@ -1,4 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Be My Hart</string>
     <string name="home">Home</string>
     <string name="near_me">Near me</string>
@@ -13,9 +14,8 @@
 
     <string name="open" translatable="false">Drawer Open</string>
     <string name="close" translatable="false">Drawer Close</string>
+
     <string name="fans">Fans</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_friends">My Friends</string>
     <string name="setting">Settings</string>
     <string name="dark_theme">Dark Theme</string>
@@ -31,6 +31,10 @@
     <string name="already_have_an_account">Sorry, I Have an Account.</string>
     <string name="registration">Registration</string>
     <string name="UserNameRequire">User Name is Require</string>
+    <string name="country">Country</string>
+    <string name="language">Language</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
 
 
 </resources>

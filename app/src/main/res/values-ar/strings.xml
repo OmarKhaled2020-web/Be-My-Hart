@@ -27,4 +27,8 @@
     <string name="already_have_an_account">بالفعل أمتلك حساب.</string>
     <string name="registration">تسجيل</string>
     <string name="UserNameRequire">اسم المستخدم مطلوب</string>
+    <string name="country">الدولة</string>
+    <string name="language">اللغة</string>
+    <string name="city">المدينة</string>
+    <string name="state">المقاطعة</string>
 </resources>

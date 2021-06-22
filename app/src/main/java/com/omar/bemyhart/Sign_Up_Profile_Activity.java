@@ -10,17 +10,14 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Sign_Up_Activity extends AppCompatActivity implements View.OnClickListener {
+public class Sign_Up_Profile_Activity extends AppCompatActivity implements View.OnClickListener {
 
     private TextInputLayout userName, inputEmail, inputPass, inputConfirmPass;
     private ProgressDialog progressDialog;
@@ -105,8 +102,6 @@ public class Sign_Up_Activity extends AppCompatActivity implements View.OnClickL
             return;
         }
 
-
-
         progressDialog.setTitle("Registration");
         progressDialog.setMessage("Please wait, While complete your registration");
         progressDialog.setCanceledOnTouchOutside(false);
@@ -114,14 +109,19 @@ public class Sign_Up_Activity extends AppCompatActivity implements View.OnClickL
 
         FireBaseMethod fireBaseMethod = new FireBaseMethod();
 
-        if(RegisterMethod(name,email,pass)){
-            progressDialog.dismiss();
-            startActivity(new Intent(this,Setup_Activity.class));
-            finish();
-        }else {
-            progressDialog.dismiss();
-            Toast.makeText(this, "Registration is Failed", Toast.LENGTH_LONG).show();
-        }
+
+        auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    progressDialog.dismiss();
+                    startActivity(new Intent(Sign_Up_Profile_Activity.this,Setup_Activity.class));
+                    finish();
+                } else {
+                    state_registration = false;
+                }
+            }
+        });
 
     }
 
@@ -130,18 +130,4 @@ public class Sign_Up_Activity extends AppCompatActivity implements View.OnClickL
         layout.requestFocus();
     }
 
-    public boolean RegisterMethod(String name, String email, String pass){
-
-        auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    state_registration = true;
-                } else {
-                    state_registration = false;
-                }
-            }
-        });
-        return state_registration;
-    }
 }

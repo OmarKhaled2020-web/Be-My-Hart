@@ -107,9 +107,6 @@ public class Sign_Up_Profile_Activity extends AppCompatActivity implements View.
         progressDialog.setCanceledOnTouchOutside(false);
         progressDialog.show();
 
-        FireBaseMethod fireBaseMethod = new FireBaseMethod();
-
-
         auth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

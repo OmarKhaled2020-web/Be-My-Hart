@@ -3,6 +3,7 @@ package com.omar.bemyhart;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +19,11 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class Log_In_Activity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView btn_create_account,btn_reset_pass;
     private TextInputLayout inputEmail,inputPass;
-    private Button btn_LogIn;
     private ProgressDialog progressDialog;
     private FirebaseAuth auth;
 
@@ -31,23 +32,35 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
+        setDefaultTheme();
+
+        Initializing();
+    }
+
+    private void Initializing(){
         auth = FirebaseAuth.getInstance();
 
         inputEmail = findViewById(R.id.TextInputEmail_login);
         inputPass = findViewById(R.id.textInputPass_login);
 
-        btn_create_account = findViewById(R.id.btn_Sign_up_move);
+        TextView btn_create_account = findViewById(R.id.btn_Sign_up_move);
         btn_create_account.setOnClickListener(this);
 
-        btn_reset_pass = findViewById(R.id.btn_forget_pass_move);
+        TextView btn_reset_pass = findViewById(R.id.btn_forget_pass_move);
         btn_reset_pass.setOnClickListener(this);
 
-        btn_LogIn = findViewById(R.id.btn_login);
+        Button btn_LogIn = findViewById(R.id.btn_login);
         btn_LogIn.setOnClickListener(this);
 
         progressDialog = new ProgressDialog(this);
     }
 
+    private void setDefaultTheme(){
+        Set_Default_Theme theme = new Set_Default_Theme(this);
+        theme.setDefaultTheme();
+    }
+
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -63,8 +76,8 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
 
     private void LogInMethod() {
 
-        String email = inputEmail.getEditText().getText().toString().trim();
-        String pass = inputPass.getEditText().getText().toString().trim();
+        String email = Objects.requireNonNull(inputEmail.getEditText()).getText().toString().trim();
+        String pass = Objects.requireNonNull(inputPass.getEditText()).getText().toString().trim();
 
         if (email.isEmpty()){
             ShowError(inputEmail,"Email is Require!");
@@ -94,13 +107,13 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
         auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+                progressDialog.dismiss();
                 if (task.isSuccessful()){
-                    progressDialog.dismiss();
                     startActivity(new Intent(Log_In_Activity.this,MainActivity.class));
                     finish();
-                }else
-                    progressDialog.dismiss();
-                    Toast.makeText(Log_In_Activity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(Log_In_Activity.this, "Error", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

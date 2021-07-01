@@ -10,7 +10,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -53,13 +52,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
     private void setDefaultTheme(){
-        sp = getSharedPreferences("user_info", Context.MODE_PRIVATE);
-        edit = sp.edit();
-
-        if(sp.getBoolean("darkMode",false))
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-        else
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        Set_Default_Theme theme = new Set_Default_Theme(this);
+        theme.setDefaultTheme();
     }
 
     private void setDrawerLayout(){
@@ -88,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     themeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                            setThemeMode(isChecked);
+                            ChangeThemeMode(isChecked);
                         }
                     });
                 } else {
@@ -180,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         });
     }
 
-    public void setThemeMode(boolean state){
+    public void ChangeThemeMode(boolean state){
         if (state) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {

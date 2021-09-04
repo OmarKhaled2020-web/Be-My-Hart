@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_custom_password_eye.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_eye_close.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_eye_password.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_person.xml" value="0.24177631578947367" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_log_in.xml" value="0.2" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_main.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_setup_profile.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_sign_up.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/app_bar_main.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/post_item.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AppData/Local/Android/Sdk/caches/transforms-3/1ed1912bd1dea91d0215b837e3aba46b/transformed/material-1.4.0/res/drawable/design_ic_visibility.xml" value="0.24177631578947367" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

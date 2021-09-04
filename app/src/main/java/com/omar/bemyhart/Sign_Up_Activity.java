@@ -3,6 +3,7 @@ package com.omar.bemyhart;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Sign_Up_Profile_Activity extends AppCompatActivity implements View.OnClickListener {
+public class Sign_Up_Activity extends AppCompatActivity implements View.OnClickListener {
 
     private TextInputLayout userName, inputEmail, inputPass, inputConfirmPass;
     private ProgressDialog progressDialog;
@@ -46,6 +47,7 @@ public class Sign_Up_Profile_Activity extends AppCompatActivity implements View.
         progressDialog = new ProgressDialog(this);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -112,7 +114,7 @@ public class Sign_Up_Profile_Activity extends AppCompatActivity implements View.
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     progressDialog.dismiss();
-                    startActivity(new Intent(Sign_Up_Profile_Activity.this,Setup_Activity.class));
+                    startActivity(new Intent(Sign_Up_Activity.this, Setup_Profile_Activity.class));
                     finish();
                 } else {
                     state_registration = false;

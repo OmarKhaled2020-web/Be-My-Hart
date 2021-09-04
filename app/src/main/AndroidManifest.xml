@@ -15,12 +15,12 @@
         android:theme="@style/Theme.BeMyHart"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".Setup_Activity"
+            android:name=".Setup_Profile_Activity"
             android:theme="@style/Theme.BeMyHart.NoActionBar">
 
         </activity>
         <activity
-            android:name=".Sign_Up_Profile_Activity"
+            android:name=".Sign_Up_Activity"
             android:theme="@style/Theme.BeMyHart.NoActionBar">
 
         </activity>

@@ -32,7 +32,7 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        setDefaultTheme();
+        //setDefaultTheme();
 
         Initializing();
     }
@@ -65,7 +65,7 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_Sign_up_move:
-                startActivity(new Intent(this, Sign_Up_Profile_Activity.class));
+                startActivity(new Intent(this, Sign_Up_Activity.class));
                 break;
 
             case R.id.btn_login:

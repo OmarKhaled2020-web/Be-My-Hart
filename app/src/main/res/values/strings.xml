@@ -28,7 +28,7 @@
     <string name="sign_up">Create a new Account.</string>
     <string name="user_name">User Name</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="already_have_an_account">Sorry, I Have an Account.</string>
+    <string name="already_have_an_account">Already, I Have an Account.</string>
     <string name="create_account">Sign UP</string>
     <string name="UserNameRequire">User Name is Require</string>
     <string name="country">Country</string>

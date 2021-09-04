@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
-    tools:context=".Sign_Up_Profile_Activity">
+    tools:context=".Sign_Up_Activity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -81,6 +81,8 @@
         app:errorTextColor="@color/red"
         app:boxStrokeErrorColor="@color/red"
         app:errorIconTint="@color/red"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_eye_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -101,6 +103,8 @@
         app:errorTextColor="@color/red"
         app:boxStrokeErrorColor="@color/red"
         app:errorIconTint="@color/red"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_eye_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

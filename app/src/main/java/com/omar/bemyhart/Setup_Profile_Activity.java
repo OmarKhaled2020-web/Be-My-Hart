@@ -15,7 +15,7 @@ import com.omar.bemyhart.Models.State_Model;
 
 import java.util.ArrayList;
 
-public class Setup_Activity extends AppCompatActivity {
+public class Setup_Profile_Activity extends AppCompatActivity {
 
     AutoCompleteTextView autoCompleteCountry,autoCompleteState,autoCompleteCity;
 

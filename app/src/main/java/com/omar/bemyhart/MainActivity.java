@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -39,7 +40,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setDefaultTheme();
+        sp = getSharedPreferences("user_info", Context.MODE_PRIVATE);
+        edit = sp.edit();
+
+        //setDefaultTheme();
 
         setDrawerLayout();
 

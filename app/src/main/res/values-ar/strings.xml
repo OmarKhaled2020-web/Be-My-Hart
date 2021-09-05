@@ -31,4 +31,6 @@
     <string name="language">اللغة</string>
     <string name="city">المدينة</string>
     <string name="state">المقاطعة</string>
+    <string name="add_story">إضافة إلى قصتك</string>
+    <string name="edit_your_profile">تعديل الملف الشخصي</string>
 </resources>

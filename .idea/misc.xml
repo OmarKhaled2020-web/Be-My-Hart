@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_add_something.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_custom_password_eye.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_eye_close.xml" value="0.24177631578947367" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/drawable/ic_eye_password.xml" value="0.24177631578947367" />
@@ -12,6 +13,9 @@
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_setup_profile.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/activity_sign_up.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/app_bar_main.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/fragment_profile.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/incloud_fragment_profile.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/include_fragment_profile.xml" value="0.25" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/layout/post_item.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/BeMyHart/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/omara/AppData/Local/Android/Sdk/caches/transforms-3/1ed1912bd1dea91d0215b837e3aba46b/transformed/material-1.4.0/res/drawable/design_ic_visibility.xml" value="0.24177631578947367" />

@@ -11,9 +11,12 @@
         <item name="colorSecondaryVariant">@color/pink</item>
         <item name="colorOnSecondary">@color/black</item>
         <item name="android:navigationBarColor">@color/black</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
         <!-- Customize your theme here. -->
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>

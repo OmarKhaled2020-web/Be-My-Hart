@@ -35,6 +35,8 @@
     <string name="language">Language</string>
     <string name="city">City</string>
     <string name="state">State</string>
+    <string name="add_story">Add Story</string>
+    <string name="edit_your_profile">Edit Your Profile</string>
 
 
 </resources>

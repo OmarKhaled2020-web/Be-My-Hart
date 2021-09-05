@@ -9,24 +9,28 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/pink"
+            android:background="@color/transparent"
             app:elevation="0dp">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolBar_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:contentInsetStartWithNavigation="0dp"
                 app:popupTheme="@style/AppTheme.popOverlay"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/lineColor"/>
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/parent_container"
             android:layout_width="match_parent"
-            android:background="?attr/colorOnPrimarySurface"
+            android:background="@color/transparent"
             android:layout_height="0dp"
             android:layout_weight="100"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>

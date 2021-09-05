@@ -7,6 +7,8 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +34,7 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        //setDefaultTheme();
+        setDefaultTheme();
 
         Initializing();
     }
@@ -41,7 +43,40 @@ public class Log_In_Activity extends AppCompatActivity implements View.OnClickLi
         auth = FirebaseAuth.getInstance();
 
         inputEmail = findViewById(R.id.TextInputEmail_login);
+        Objects.requireNonNull(inputEmail.getEditText()).addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                inputEmail.setErrorEnabled(false);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
         inputPass = findViewById(R.id.textInputPass_login);
+        Objects.requireNonNull(inputPass.getEditText()).addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                inputPass.setErrorEnabled(false);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
         TextView btn_create_account = findViewById(R.id.btn_Sign_up_move);
         btn_create_account.setOnClickListener(this);

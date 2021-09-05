@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         sp = getSharedPreferences("user_info", Context.MODE_PRIVATE);
         edit = sp.edit();
 
-        //setDefaultTheme();
+        setDefaultTheme();
 
         setDrawerLayout();
 

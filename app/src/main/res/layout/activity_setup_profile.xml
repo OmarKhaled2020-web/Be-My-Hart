@@ -7,74 +7,15 @@
     android:padding="25dp"
     tools:context=".Setup_Profile_Activity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/setup_image"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:src="@drawable/ic_person"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        app:startIconDrawable="@drawable/ic_language"
-        android:id="@+id/TextInputLayout_country"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setup_image">
+        android:layout_height="match_parent">
 
-        <AutoCompleteTextView
-            android:id="@+id/inputCountry"
+        <include
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/country"
-            android:inputType="none"
-             />
+            layout="@layout/include_activity_setup_profile"/>
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/TextInputLayout_state"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout_country">
-
-        <AutoCompleteTextView
-            android:id="@+id/inputState"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/state"
-            android:inputType="none"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout_state">
-
-        <AutoCompleteTextView
-            android:id="@+id/inputCity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/city"
-            android:inputType="none"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

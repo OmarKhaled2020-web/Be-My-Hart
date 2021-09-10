@@ -37,6 +37,17 @@
     <string name="state">State</string>
     <string name="add_story">Add Story</string>
     <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="gender">Gender</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="weight">Weight</string>
+    <string name="high">Height</string>
 
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 
 </resources>

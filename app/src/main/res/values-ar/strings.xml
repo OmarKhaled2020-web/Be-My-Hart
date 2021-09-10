@@ -33,4 +33,17 @@
     <string name="state">المقاطعة</string>
     <string name="add_story">إضافة إلى قصتك</string>
     <string name="edit_your_profile">تعديل الملف الشخصي</string>
+    <string name="gender">الجنس</string>
+    <string name="day">اليوم</string>
+    <string name="year">السنة</string>
+    <string name="month">الشهر</string>
+    <string name="ethnicity">العرق</string>
+    <string name="weight">الوزن</string>
+    <string name="high">الطول</string>
+    
+    <string-array name="gender_array">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+
 </resources>

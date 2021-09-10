@@ -10,21 +10,24 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/pink"
             android:fitsSystemWindows="true"
+            android:background="@color/transparent"
             app:elevation="0dp">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolBar_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:contentInsetStartWithNavigation="0dp"
-                android:background="@color/pink"
                 app:popupTheme="@style/AppTheme.popOverlay"/>
 
         </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:background="@color/lineColor"/>
 
         <FrameLayout
             android:layout_width="match_parent"
